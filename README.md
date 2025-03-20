@@ -132,6 +132,8 @@ By following this approach, developers can simply clone the repo and run npm ins
 
 📁 Project Structure Overview
 
+*To see this properly click on CODE, instead of PREVIEW.
+
 sporgeskema-system/
 │
 ├── client/                     # Frontend React application
