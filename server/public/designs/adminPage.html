@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="css/adminPage.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <div id="burger-menu">&#9776;</div>
+            <ul id="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Velkommen</h2>
+        <p>Login for at få svarende fra spørgeskemaet</p>
+
+        <section class="login">
+            <div class="form-box">
+                <h3>Login</h3>
+                <input type="text" id="login-username" placeholder="Brugernavn">
+                <input type="password" id="login-password" placeholder="Adgangskode">
+                <button onclick="loginUser()">Login</button>
+                <p id="login-message"></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "sessionId": "035397c9-a591-45a3-8e1f-82b65ee17a82",
+  "startTime": "2025-03-20T16:42:03.705Z",
+  "answers": [
+    {
+      "websiteId": "2",
+      "viewTime": 19.897,
+      "answeredAt": "2025-03-20T16:42:25.808Z",
+      "updatedAt": "2025-03-20T16:42:34.817Z",
+      "responses": {
+        "1": 2,
+        "2": 5,
+        "3": 3,
+        "4": 2,
+        "5": 3,
+        "6": 5,
+        "7": "f dfg dfgdf d fg df "
+      },
+      "isPartial": true
+    }
+  ],
+  "demographics": {
+    "alder": "25",
+    "køn": "1",
+    "uddannelse": "3",
+    "beskftigelse": "lars"
+  },
+  "completed": false,
+  "lastUpdated": "2025-03-20T16:42:14.898Z",
+  "lastActivity": "2025-03-20T16:42:34.817Z"
+}0T16:42:34.815Z"
+}

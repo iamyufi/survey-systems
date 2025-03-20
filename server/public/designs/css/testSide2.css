@@ -1,0 +1,362 @@
+/* ----- BODY ----- */
+body {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+/* ----- GENERELT ----- */
+h1 {
+    font-size: 4rem;
+    margin-bottom: 5em;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* ----- KNAP DESIGN ----- */
+#btn {
+    background-color: #E24848;
+    color: #fff;
+    border: none;
+    padding: 1em 3em;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn:hover {
+    background-color: #b82a2a;
+}
+
+/* ----- HEADER ----- */
+#header {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#burger-menu {
+    display: none; /* Skjules som standard */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ----- HERO SECTION ----- */
+#hero {
+    position: relative;
+    height: 80vh;
+    background-image: url('../img/testSide2/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1;
+}
+
+/* ----- POPULÆRE REJSEMÅL + HOTELLER ----- */
+#rejsemaal {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50%;
+    padding: 4em 0;
+}
+
+#rejsemaaler {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+#rejsemaalDiv {
+    width: 250px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#rejsemaalDiv:hover {
+    transform: scale(1.05); /* Zoom ind */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stærkere skygge */
+}
+
+#rejsemaalDiv img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#tekstBox {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#tekstBox p {
+    margin: 0;
+}
+
+#tekstBox span {
+    display: inline-block;
+    text-align: right;
+    margin-top: 10px;
+    color: #999;
+    font-weight: bold;
+}
+
+/* ----- BILLEDE SECTION ----- */
+#billedeSection {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+}
+
+#billedeContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.large {
+    flex: 2;
+}
+
+#rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+#billedeContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%); /* Mørkere billede */
+}
+
+#tekstBoxOver {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+#tekstBoxOver p {
+    margin-bottom: 1.5em;
+}
+
+/* ----- LOREM IPSUM TEKST ----- */
+#loremIpsum {
+    margin: 3em;
+    padding: 5em 0;
+    text-align: center;
+}
+
+#loremIpsum p {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#loremIpsum button{
+    margin-top: 2em;
+}
+
+/* ----- FOOTER ----- */
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 2em 0;
+    border-top: 1px solid #ccc;
+}
+
+#footer-section {
+    text-align: left;
+}
+
+#footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#footer-section p {
+    margin: 20px 0;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+/* Skærme under 1024px (Tablets og mindre) */
+@media (max-width: 1024px) {
+    body {
+        max-width: 100%;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    #flexBox {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #rejsemaaler {
+        grid-template-columns: repeat(2, 1fr); /* To kolonner for bedre plads */
+    }
+
+    #billedeSection {
+        flex-direction: column;
+    }
+
+    #loremIpsum {
+        margin: 0;
+    }
+
+    .large {
+        flex: 1;
+    }
+}
+
+/* Skærme under 768px (Tablets og mindre) */
+@media (max-width: 768px) {
+    #burger-menu {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #rejsemaaler{
+        display: block;
+        max-width: 100%;
+        margin: 1em;
+    }
+
+    #rejsemaalDiv {
+        width: 100%;
+    }
+
+    #loremIpsum p {
+        max-width: 90%;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Skærme under 480px (Mobilvenligt layout) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #flexBox input,
+    #flexBox button {
+        width: 100%;
+    }
+
+    #btn {
+        width: 100%;
+        padding: 1em;
+    }
+
+    #tekstBoxOver {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    #rejsemaaler {
+        grid-template-columns: 1fr; /* Én kolonne for optimal plads */
+    }
+}

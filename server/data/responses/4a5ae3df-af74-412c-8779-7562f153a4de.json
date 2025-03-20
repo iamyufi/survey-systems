@@ -1,0 +1,73 @@
+{
+  "sessionId": "4a5ae3df-af74-412c-8779-7562f153a4de",
+  "startTime": "2025-03-19T20:05:05.144Z",
+  "answers": [
+    {
+      "websiteId": "3",
+      "viewTime": 13.191,
+      "answeredAt": "2025-03-19T20:14:06.591Z",
+      "updatedAt": "2025-03-20T16:28:15.715Z",
+      "responses": {
+        "1": 3,
+        "2": 3,
+        "3": 5,
+        "4": 2,
+        "5": 5,
+        "6": 3,
+        "7": "sd fsf sd fsd fs fsdf",
+        "8": "1"
+      },
+      "isPartial": true
+    },
+    {
+      "websiteId": "1",
+      "viewTime": 90.722,
+      "answeredAt": "2025-03-19T20:14:22.495Z",
+      "updatedAt": "2025-03-20T14:23:07.939Z",
+      "responses": {
+        "1": 3,
+        "2": 5,
+        "3": 3,
+        "4": 4,
+        "5": 3,
+        "6": 4,
+        "7": "hhghgf h fdghdfg hdfh dfgf dhdfg hfgd",
+        "8": "3",
+        "9": "4",
+        "10": "4",
+        "11": "5",
+        "12": "4",
+        "13": "2",
+        "14": "1",
+        "15": "1"
+      },
+      "isPartial": false
+    },
+    {
+      "websiteId": "2",
+      "viewTime": 55.521,
+      "answeredAt": "2025-03-19T20:14:44.735Z",
+      "updatedAt": "2025-03-20T14:24:03.498Z",
+      "responses": {
+        "1": 3,
+        "2": 3,
+        "3": 3,
+        "4": 3,
+        "5": 3,
+        "6": 3,
+        "7": "lars"
+      },
+      "isPartial": true
+    }
+  ],
+  "demographics": {
+    "alder": "dfggdfgdf gdfgd gdfddfgdfg",
+    "køn": "2",
+    "uddannelse": "4",
+    "beskftigelse": "dfgdgdgdfg"
+  },
+  "completed": true,
+  "lastUpdated": "2025-03-20T16:28:02.495Z",
+  "completedAt": "2025-03-20T16:42:00.803Z",
+  "lastActivity": "2025-03-20T16:28:15.715Z"
+}

@@ -1,0 +1,396 @@
+/* ----- BODY ----- */
+body {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #fff;
+}
+
+/* ----- GENERELT ----- */
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+button{
+    background-color: #EBDCCB;
+    padding: 1em 2em;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover{
+    background-color: #dccebf;
+}
+
+/* ----- HEADER ----- */
+header {
+    position: relative;
+    z-index: 2; /* Sørger for at header ligger ovenpå hero */
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent; /* Fjern baggrund på navbar */
+    color: #fff; 
+    padding: 15px 20px;
+    position: absolute; /* Gør navbar'en positioneret ovenpå billedet */
+    width: 100%;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0 6em 0 0;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; 
+    margin: 4px 0;
+}
+
+/* ----- HERO SECTION ----- */
+#hero {
+    position: relative;
+    height: 80vh;
+    background-image: url('../img/testSide1/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1;
+    max-width: 8em;
+}
+
+
+/* ----- BILLEDE SEKTION 1 ----- */
+#gridBilled{
+    margin: 5em 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ----- LOREM TEKST ----- */
+#loremTekst{
+    padding: 4em;
+}
+
+#loremP{
+    margin-bottom: 2em;
+}
+
+
+/* ----- POPULÆRE HOTELLER ----- */
+.hotels-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hotel-gallery {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.hotel-image {
+    width: 20%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.hotel-info {
+    width: 30%;
+    background-image: url('img/testSide1/poolHouse.png');
+    background-size: cover; /* Sørger for at billedet fylder elementet */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Forhindrer gentagelse af billedet */
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-info h2 {
+    margin-top: 0;
+}
+
+.book-btn {
+    background-color: #f5e8db;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.slider-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 8px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background-color: #f5e8db;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #000;
+}
+
+
+/* ----- BILLEDE SECTION 2 ----- */
+#billedeSection {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    padding: 0 0 4em 0;
+}
+
+#billedeContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.large {
+    flex: 2;
+}
+
+#rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+#billedeContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%); /* Mørkere billede */
+}
+
+#tekstBoxOver {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+#tekstBoxOver p {
+    margin-bottom: 1.5em;
+}
+
+
+/* ----- FOOTER ----- */
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 2em 0;
+    border-top: 1px solid #ccc;
+}
+
+#footer-section {
+    text-align: left;
+}
+
+#footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#footer-section p {
+    margin: 20px 0;
+}
+
+
+/* ----- RESPONSIVE DESIGN ----- */
+
+/* Mobilvenlig header */
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .burger-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    #flexBox {
+        flex-direction: column;
+        gap: 5px;
+        max-width: 90%;
+    }
+
+    input, #btn {
+        width: 100%;
+    }
+
+    .container, .container2 {
+        grid-template-columns: 1fr;
+    }
+
+    .hotel-gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hotel-image, .hotel-info {
+        width: 100%;
+        height: 300px;
+    }
+
+    #billedeSection {
+        flex-direction: column;
+    }
+
+    .large, #rightColumn {
+        width: 100%;
+    }
+
+    #billedeContainer {
+        width: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-section {
+        margin-bottom: 1.5em;
+    }
+}
+
+/* Tablet layout */
+@media (max-width: 1024px) {
+    body {
+        max-width: 100%;
+    }
+
+    .container, .container2 {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .hotel-info {
+        padding: 20px;
+    }
+
+    .hotel-gallery {
+        gap: 10px;
+    }
+
+    .slider-indicators {
+        gap: 5px;
+    }
+}
+
+/* Større skærme */
+@media (min-width: 1200px) {
+    body {
+        max-width: 70%;
+    }
+}
